@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 80px;  
+    text-decoration: underline;    
+ 
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid white; /* Bordure noire de 2 pixels */
+    padding: 20px; /* Espacement intérieur */
+    background-color: rgba(58, 38, 38, 0.4); /* Couleur de fond noire avec 50% d'opacité */
+    color: white; /* Texte en blanc */
+    width: 1500px; /* Largeur réduite */
+    height: 250px; /* Hauteur augmentée */
+    border-radius: 10px; /* Bordures arrondies */
+    display: flex;
+    margin-bottom: 300px;   
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+}
+
+nav {
+    background-color: rgba(81, 78, 82, 0.5); /* Couleur de fond noire avec 50% d'opacité */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 20px; /* Coins légèrement arrondis */
+    display: flex; /* Flexbox pour aligner les éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    position: relative; /* Positionnement relative pour le conteneur */
+    margin: 0 auto; /* Centre le nav horizontalement */
+    width: 50%; /* Largeur du nav */
+    max-width: 600px; /* Largeur maximale */
+    font-style: bold;
+}
+
+nav ul {
+    list-style: none; /* Supprime les puces des éléments de la liste */
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    gap: 20px; /* Espacement entre les éléments de la liste */
+    padding: 0; /* Supprime le padding */
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: 1000; /* Poids de la police */
+    padding: 8px 15px; /* Espacement autour du texte */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    transition: background-color 0.3s, color 0.3s; /* Transition douce */
+}
+
+nav a:hover {
+    background-color: #000000; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("Photos_site/Arriere_plan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}   
