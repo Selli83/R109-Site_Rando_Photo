@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;  
+     
+    
+ 
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid white; /* Bordure noire de 2 pixels */
+    padding: 20px; /* Espacement intérieur */
+    background-color: rgba(58, 38, 38, 0.4); /* Couleur de fond noire avec 50% d'opacité */
+    color: white; /* Texte en blanc */
+    width: 1500px; /* Largeur réduite */
+    height: 250px; /* Hauteur augmentée */
+    border-radius: 10px; /* Bordures arrondies */
+    display: flex;
+    margin-bottom: 200px;   
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+}
+
+nav {
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+}
+
+.nav-item {
+    color: #83818c;
+    font-family: arial, sans-serif;
+    padding: 20px;
+    margin: 0 6px;
+    position: relative;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: #dfe2ea;
+    height: 5px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    left: 0;
+    transition: .3s;
+}
+
+.nav-item:not(.is-active):hover:before {
+    bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+    color: #333;
+}
+
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    transition: .4s;
+    border-radius: 8px 8px 0 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("Photos_site/Arriere_plan.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
